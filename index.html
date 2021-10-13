@@ -42,7 +42,8 @@
     font-family: /*"TeXGyrePagella", "Palatino Linotype", "Book Antiqua", Palatino, serif; */'Lato', Verdana, Helvetica, sans-serif;
     font-size: 32px;
     }
-    @font-face {
+    /* latin-ext */
+@font-face {
   font-family: 'Lato';
   font-style: italic;
   font-weight: 400;
@@ -106,37 +107,76 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+a {
+  color: #1772d0;
+  text-decoration: none;
+}
 
-    li:not(:last-child) {
-        margin-bottom: 5px;
-    }
-    .one
-    {
-    width: 160px;
-    height: 160px;
-    position: relative;
-    }
-    .two
-    {
-    width: 160px;
-    height: 160px;
-    position: absolute;
-    transition: opacity .2s ease-in-out;
-    -moz-transition: opacity .2s ease-in-out;
-    -webkit-transition: opacity .2s ease-in-out;
-    }
-    .fade {
-     transition: opacity .2s ease-in-out;
-     -moz-transition: opacity .2s ease-in-out;
-     -webkit-transition: opacity .2s ease-in-out;
-    }
-    span.highlight {
-        background-color: #ffffd0;
-    }
+a:focus,
+a:hover {
+  color: #f09228;
+  text-decoration: none;
+}
+
+body,
+td,
+th,
+tr,
+p,
+a {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px
+}
+
+strong {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+heading {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 22px;
+}
+
+papertitle {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700
+}
+
+name {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 32px;
+}
+
+.one {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+
+.two {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+
+.fade {
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+
+span.highlight {
+  background-color: #ffffd0;
+}
   </style>
 
   <link rel="shortcut icon" href=" /bitbug_favicon.ico" /> 
-  <title>Kaifeng Zhang</title>
+  <title>Kaifeng Zhang's Homepage</title>
 
   
   <style id="dark-reader-style" type="text/css">@media screen {
@@ -204,7 +244,7 @@ html {
 
 
 </div>
-  <table width="900" border="0" align="center" cellspacing="0" cellpadding="0">
+  <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
     <tbody><tr>
     <td>
       <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
@@ -255,7 +295,7 @@ html {
           
           <tr><td>
              <heading>Recent Talk (September 2021)</heading><br><br>
-             <iframe width="820" height="450" src="https://www.youtube.com/embed/en3sja_F8bo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             <iframe width="800" height="440" src="https://www.youtube.com/embed/en3sja_F8bo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
              <!--iframe width="780" height="439" src="https://www.youtube.com/embed/wv1zXnxRCCM?start=639" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe-->
         <!--iframe width="780" height="439" src="https://www.youtube.com/embed/tcFLwgqO7G0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe-->
         <!--<iframe width="780" height="439" src="https://www.youtube.com/embed/i05Fk4ebMY0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
