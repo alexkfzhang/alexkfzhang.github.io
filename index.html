@@ -263,14 +263,30 @@ html {
          </tbody><table>
         
           <table width="100%" align="center" border="0" cellspacing="10" cellpadding="1" style="margin-top: -5px"><tbody>
-            <tr>
-               <td style="padding:5px; width:30%; vertical-align:middle">
-                <img src="AEAIL.gif" alt="aeail" width="133" height="75" style="border-style: none">
-              </td>
-              <td width="70%" valign="middle">
-                  <papertitle><a href="https://openreview.net/pdf?id=OCgCYv7KGZe">Auto-Encoding Adversarial Imitation Learning</a></papertitle>
-                <br>
-                <i>Kaifeng Zhang</i>,
+              <tr onmouseout="npil_stop()" onmouseover="npil_start()">
+              <td style="padding:20px;width:30%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='npil_image'>
+		            <img src='cut.gif' width="413" height="170"></div>
+                <img src='optimize.gif' width="413" height="170">
+              </div>
+              <script type="text/javascript">
+                function npil_start() {
+                  document.getElementById('npil_image').style.opacity = "1";
+                }
+
+                function npil_stop() {
+                  document.getElementById('npil_image').style.opacity = "0";
+                }
+                npil_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:70%;vertical-align:middle">
+              <a href="">
+                <papertitle><a href="https://openreview.net/pdf?id=OCgCYv7KGZe">Auto-Encoding Adversarial Imitation Learning</a></papertitle>
+              </a>
+              <br>
+               <i>Kaifeng Zhang</i>,
                 <a href="https://ruizhaogit.github.io">Rui Zhao</a>,
                 <a href="https://zhang-vislab.github.io">Ziming Zhang</a>,
                 <a href="https://yang-gao.weebly.com">Yang Gao</a>
@@ -282,8 +298,7 @@ html {
                 (3) It can also denoise the expert demonstrations since the encoding-decoding process.<br>
                 (4) Empircally, our method achieves 16.1% and 46.5% relative improvement overall compared to the best baseline FAIRL and PWIL on clean and noisy expert data respectively.
                </div><br>
-              </td>
-              
+            </td>
             </tr>
           </tbody></table>
        
